@@ -9,7 +9,7 @@ int main()
   getline(cin, s);
   int hash_count = 0;
 int star_count = 0;
-for(int i = 0; i<s.size();i++)
+for(int i = 0; i<s.size();i++) .....  // or use this for(char ch: s) if(ch=='*)...
 {
   if(s[i]=='*) star_count++;
     else if(s[i]=='#) hash_count++;
