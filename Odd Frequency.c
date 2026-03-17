@@ -39,6 +39,7 @@ return 0;
 // C++ using stl maps
 char fun(char arr[], int n)
 {
+    char ans = '\0';
   unordered_map<char, int> mp;
 //store data
  for(int i=0;i<n;i++)
@@ -54,4 +55,15 @@ char fun(char arr[], int n)
   }}
 return ans;
 }
+
+//in main function 
+if(ans=='\0')
+{
+cout<<"All are even"<<endl;
+}
+else
+{
+cout<<ans<<endl;
+}
+
 
