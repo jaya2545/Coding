@@ -1,0 +1,61 @@
+ // [1,2,3,4,5] , {1,2,3,4,5} - comma , 1 2 3 4 5 space
+
+//space seperated C++
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  string s;
+getline(cin,s);
+vector<int> arr;
+stringstream ss(s);
+string num;
+while(getline(ss, num,' ')
+{
+arr.pushback(stoi(num));
+}
+for(int ans:arr)
+{
+cout<<ans<<" ";
+}
+}
+
+//comma seperated
+main()
+string s;
+getline(cin,s);
+vector<int> arr;
+stringstream ss(s);
+string num;
+while(getline(ss,num,','))
+{
+arr.pushback(stoi(num));
+}
+for(int ans:arr)
+{
+cout<<ans<<" ";
+}
+}
+      //
+#include<biits/stdc++.h>
+using namespace std;
+int main()
+{
+ string s;
+getline(cin,s);
+vector<int> arr;
+if(s.front()=='[' && s.back()==']')
+{
+s = substr(1,s.length()-2);
+}
+stringstream ss(s);
+string num;
+while(getline(ss,num,','))
+{
+arr.pushback(stoi(num));
+}
+for(int ans:arr)
+{
+cout<<ans<<" ";
+}
+}
